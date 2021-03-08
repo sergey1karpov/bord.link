@@ -20,7 +20,7 @@
 				<a href="{{route('post.index')}}">Показать все посты</a>
 			@endif
 		@endif
-        <div class="mt-4"></div
+        <div class="mt-5"></div
 		@foreach($blogs as $blog)
 
                 <div class="col-sm-12 col-md-12 col-xl-6 col-lg-6 " style="padding: 0">

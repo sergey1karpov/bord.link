@@ -66,7 +66,7 @@
                         <li class="nav-item avatar">
                             <a class="nav-link p-0" href="#">
                                 {{-- <img src="{{Auth::user()->avatar}}" height="35px" width="35px"> --}}
-                                <div class="img " style="background-image: url({{Auth::user()->avatar}});"></div>
+                                {{-- <div class="img " style="background-image: url({{Auth::user()->avatar}});"></div> --}}
                             </a>
                         </li>
                     @endif

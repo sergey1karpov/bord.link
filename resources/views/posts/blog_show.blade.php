@@ -5,7 +5,7 @@
     <div type="hidden">@section('title'){{$blog->title}}@endsection</div>
 
 <div class="row" style="margin: 0">
-	<div class="col-12 mt-4" style="padding: 0">
+	<div class="col-12" style="padding: 0; margin-top: 10px">
 		<div class="card" style="border: none">
 
 			<div class="card-body" style="padding-left: 0; padding-right: 0">

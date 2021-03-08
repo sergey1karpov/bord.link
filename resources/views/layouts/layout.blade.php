@@ -68,7 +68,7 @@
                     <li class="nav-item avatar">
                         <a class="nav-link p-0" href="#">
                         {{-- <img src="{{Auth::user()->avatar}}" height="35px" width="35px"> --}}
-                        <div class="img " style="background-image: url({{Auth::user()->avatar}});"></div>
+                        {{-- <div class="img " style="background-image: url({{Auth::user()->avatar}});"></div> --}}
                         </a>
                     </li>
                 @endif
@@ -96,13 +96,13 @@
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="background-color: #040404">
                         <a style="font-family: 'Jost', sans-serif; font-size: 1.2em; margin-bottom: 0; color: #f4f4f2; text-transform: uppercase; " class="dropdown-item nav-item"  href="{{route('profile', Auth::user()->nickname)}}">
-                            {{ __('Profile') }}
+                            {{ __('профиль') }}
                         </a>
                         @if(\Auth::user()->role_id != 1)
                         <a style="font-family: 'Jost', sans-serif; font-size: 1.2em; margin-bottom: 0; color: #f4f4f2; text-transform: uppercase; " class="dropdown-item nav-item"  href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
+                            {{ __('выход') }}
                         </a>
                         @else
                         <a style="font-family: 'Jost', sans-serif; font-size: 1.2em; margin-bottom: 0; color: #f4f4f2; text-transform: uppercase; " class="dropdown-item nav-item"  href="{{ route('home', ['id' => Auth::user()->id]) }}">
